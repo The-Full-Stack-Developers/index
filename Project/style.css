@@ -9,6 +9,8 @@
     align-content: center;
     text-align: center;
     align-items: center;
+    border-radius: .9%;
+    margin: 10px 10px 10px 10px;
 }
 .j{
     color: blanchedalmond;
