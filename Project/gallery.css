@@ -8,3 +8,21 @@ img{
 hr{
 	height: 1px;
 }
+footer{
+    /* margin-top: 70vh; */
+    background-color: #007bff;
+    color: black;
+}
+footer a{
+    color: white;
+}
+/* .white{
+    color: blue;
+} */
+footer a:hover{
+    color: navajowhite;
+    text-decoration: none;
+}
+#yes{
+    color: white;
+}

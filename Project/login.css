@@ -7,7 +7,7 @@ body{
 }
 .form{
     background: #000;
-    z-index: 1;
+    z-index: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     position: absolute;
     top: 50%;
@@ -25,6 +25,7 @@ body{
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
+    margin-top: 14vh;
 
 }
 .form .icons i{
@@ -90,4 +91,22 @@ color: #10AC84;
     /* transition: .8s; */
     transition-property: color,transform;
 
+}
+footer{
+    margin-top: 70vh;
+    background-color: #007bff;
+    color: black;
+}
+footer a{
+    color: white;
+}
+/* .white{
+    color: blue;
+} */
+footer a:hover{
+    color: navajowhite;
+    text-decoration: none;
+}
+#yes{
+    color: white;
 }
