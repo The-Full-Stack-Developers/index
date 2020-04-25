@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: white;
+    background-size: cover;
+}
+.boxed {
+  border: 1px solid blue ;
+}
+span{
+	text-decoration: underline blue;
+}
+img{
+	width: 600px;
+	padding: 20px;
+	float: right;
+	margin: 0 auto;
+}
+
+hr{
+		height: 2px;
+		color: blue;
+}
+

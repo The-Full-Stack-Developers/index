@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: white;
+    background-size: cover;
+}
+
+
+img{
+	width: 500px;
+	height: 500px;
+	padding: 20px;
+	float: right;
+	margin: 0 auto;
+	border: 2px solid blue;
+}
+
+hr{
+		height: 2px;
+		color: blue;
+}
+
+
+
