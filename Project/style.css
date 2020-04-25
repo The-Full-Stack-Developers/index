@@ -37,3 +37,7 @@ a{
     padding-left: 19rem;
     
 }
+.ls a{
+    color: black;
+    text-decoration: none;
+}
