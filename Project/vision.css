@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: white;
+    background-size: cover;
+    font-family: Cardo;
+    color: cyan;
+}
+hr{
+		height: 2px;
+		color: blue;
+}
