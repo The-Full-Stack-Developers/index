@@ -3,67 +3,296 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Document</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- <link rel="stylesheet" href="gallery.css" type="text/css"> -->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="facilities.css"> 
+  <title>Document</title>
+  <style>
+    body{
+    /* background-image: url("https://ak6.picdn.net/shutterstock/videos/22500016/thumb/1.jpg"); */
+    background-size: 100% 100%;}
+    .jumbotron{color: rgb(38, 107, 245);
+        background-size: 100% 100%;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        /* background-image: url("https://ak6.picdn.net/shutterstock/videos/22500016/thumb/1.jpg"); */
+    }
+.jumbotron .container {
+position:relative;}
+    </style>
 </head>
 <body>
-    <div class="card mb-3" style="max-width: 540px;">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Biblioth%C3%A8que_de_l%27Assembl%C3%A9e_Nationale_%28Lunon%29.jpg/1200px-Biblioth%C3%A8que_de_l%27Assembl%C3%A9e_Nationale_%28Lunon%29.jpg" class="card-img" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  <div class="container-fluid">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#"><span class="material-icons">
+        business
+        </span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Academics</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Student Corner
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Pre Question Papers</a>
+              <a class="dropdown-item" href="#">Student Resource</a>
+              <a class="dropdown-item" href="#">Results</a>
+              <a class="dropdown-item" href="#">Apply Online Certificate</a>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-3" style="max-width: 540px;">
+          </li>
+        <!-- </ul>/ -->
+        <!-- <ul class="navbar-nav navbar-expand-lg navbar-dark bg-primary  "> -->
+          <li class="nav-item"><a class="nav-link" href="Login .html">Hall of fame </a></li>
+          <li class="nav-item" id="mate"><a class="nav-link" href="#">Sign Up</a></li>
+          <li class="nav-item" id="check"><a class="nav-link" href="login.html">Login </a></li>
         
-        <div class="card-body">
-          <div class="col-md-8">
-                <div class="row no-gutters">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-                <div class="col-md-4">
-                  <img src="data:image/jpeg;base64,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" class="card-img" alt="...">
-                </div>
-          </div>
-        </div>
+        </ul>
       </div>
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="..." class="card-img" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-        </div>
+      
+      
+    </nav>
+    </div>
+          
+      <div class="container-fluid">
+      <div class="jumbotron">
+          <h1>Pioneer Academy</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, assumenda.</p>  
       </div>
-      <div class="card mb-3" style="max-width: 540px;">
-        
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="..." class="card-img" alt="...">
-                </div>
-          </div>
-        </div>
+
+
+
+
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="https://i0.wp.com/jgu.edu.in/wp-content/uploads/2019/03/global-library-main_0_0-1.jpg?fit=680%2C409&ssl=1">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">School Library<i class="material-icons right">‧‧‧</i></span>
+      <!-- <p><a href="#">This is a link</a></p> -->
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">School Library<i class="material-icons right">close</i></span>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores blanditiis ducimus accusamus aliquam ipsa, reprehenderit unde deleniti tempora reiciendis voluptatibus consequatur suscipit exercitationem, neque aliquid iure ab soluta sed omnis! Ab, eaque animi! Cum, sunt perferendis unde possimus, ipsum non natus enim eius a hic ducimus amet? Eligendi nemo vero quos fuga repellat et placeat pariatur inventore explicabo molestias, nisi, dignissimos repudiandae consectetur a rem aliquam odio iure neque ullam tempora deserunt unde? Vitae illo est impedit, consequatur nisi laborum deserunt sint debitis eaque, ullam vel placeat in cumque alias blanditiis aspernatur. Non, obcaecati voluptates, hic tempore veniam tempora consequatur, illum porro iusto assumenda expedita nesciunt voluptas aliquid earum dolorum ipsam repellendus reiciendis dignissimos rerum aliquam asperiores? Atque delectus, natus ratione nesciunt consequatur quis. </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="https://lh3.googleusercontent.com/proxy/Bi4wagOspUorkLkc-pqNGw_i9KIxyf9I_t_ABJcbPvKhdSgcCXKubc2Jg-W2qaY4TGjmGg0P_RwbY7Fw36Qd9gPOenrU4ydEnfVpgFQEGqWVOhB9s6ZjEpXfHwO76U0">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Computer Lab<i class="material-icons right">‧‧‧</i></span>
+      <!-- <p><a href="#">This is a link</a></p> -->
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Computer Lab<i class="material-icons right">close</i></span>
+      <p>H Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam omnis porro tempora minus quasi iste consectetur. Quisquam minima doloremque modi asperiores consequuntur dolorum, animi omnis molestiae unde delectus aut aperiam fuga nulla quam harum distinctio velit aliquam libero? Laudantium voluptatum in repellendus amet, ipsum deleniti sequi libero magni laborum exercitationem officiis quasi ipsa. Vitae, nisi officiis? Fugit eligendi laboriosam consequatur quidem aperiam corrupti excepturi. Vel quis necessitatibus quasi, consequuntur et quam dolore at! Consequatur aliquam eveniet distinctio expedita, dolorem inventore, explicabo necessitatibus esse dignissimos eius repellat laboriosam, tenetur accusantium repellendus ullam. Non magni explicabo rerum consequuntur architecto dignissimos, consectetur vel? .</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="https://www.idfdesign.com/real/ibebi-school-brussels-5.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Canteen<i class="material-icons right">‧‧‧</i></span>
+      <!-- <p><a href="#">This is a link</a></p> -->
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Canteen</span><i class="material-icons right">close</i></span>
+      <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, dignissimos reiciendis enim, dolorem nostrum, optio officia dolores iusto repellat quaerat consequatur. Cum, tempora illo eaque fuga corporis veritatis minima nemo eum sequi mollitia, itaque atque facere ducimus aliquid ad in non quia a temporibus eos. Voluptatem numquam nihil, magnam consequuntur non natus rem. Excepturi in sunt voluptatem cum voluptatum. Aliquid eveniet repellat animi, labore architecto, explicabo quis sint recusandae a modi excepturi. Consequuntur voluptatum similique, doloribus quidem cum commodi quia est error asperiores tempora vitae nemo alias nihil provident sapiente veritatis laudantium assumenda culpa fugiat molestiae, modi voluptatibus ipsa eaque tenetur! Error magnam, repellat excepturi suscipit architecto odit. Fuga dolor earum voluptate architecto ipsam porro corporis, similique illo, eius est aliquam veniam deleniti. Dolore consectetur, laudantium assumenda voluptates placeat iusto officia nostrum, quam minus autem aliquam quibusdam. Dolores vel animi magnam veniam impedit porro pariatur, excepturi odio assumenda voluptatem corrupti! on.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="https://www.innovadesigngroup.co.uk/wp-content/uploads/2017/04/dameallens_112-1200x480.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Science lab<i class="material-icons right">‧‧‧</i></span>
+      <!-- <p><a href="#">This is a link</a></p> -->
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Science Lab </span><i class="material-icons right">close</i></span>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat cum laboriosam unde ad magnam ut corrupti aspernatur commodi voluptatibus reiciendis ex officiis fugit voluptas assumenda quia porro praesentium nihil nisi est iste iure eligendi provident, quas tempora. Dolor voluptate cupiditate, quas id molestias inventore, praesentium minus error, aperiam a dicta recusandae harum architecto ullam exercitationem amet odio quia illo sint. Quas cupiditate neque, delectus veritatis vero nobis velit nostrum molestias perferendis? Ipsum, velit fugiat blanditiis aliquid optio aperiam! Hic natus fugiat quidem animi expedita quaerat, repellendus blanditiis laboriosam quam omnis commodi, illum tempora impedit sunt ex voluptatem similique id dolorem amet praesentium atque perferendis perspiciatis? Nisi voluptate dicta delectus asperiores, rerum pariatur neque enim sequi ex corporis tempora porro et, aperiam assumenda deserunt, inventore voluptas? Voluptates nihil sit at veritatis dolorem quis totam accusamus ipsum amet praesentium sunt, harum voluptatem et? Voluptas in reprehenderit, consectetur distinctio commodi dolorum consequatur harum placeat sit maiores amet sunt quisquam fugit provident dicta? Praesentium, vel nisi. Quisquam itaque reprehenderit quibusdam porro facilis dicta sunt vero, asperiores perspiciatis aut dolorum expedita qui eligendi adipisci totam hic, et, cum non tempore soluta! Alias, sint, itaque mollitia saepe libero quaerat necessitatibus beatae iure a pariatur veniam consequuntur vero corrupti, nemo minus magnam sed? Dolor magnam totam cumque sit consequatur quam facilis pariatur ullam culpa, fugiat necessitatibus ratione reprehenderit mollitia neque obcaecati aliquid dignissimos nobis maiores vero quis impedit. Adipisci quaerat tempore at officiis, atque sequi nobis voluptatum in unde eius nulla rem facilis fuga, facere dolorem tenetur labore voluptatibus aliquid consequuntur, sapiente aperiam corrupti deleniti repellat velit? Optio provident velit corrupti eveniet assumenda ipsum incidunt delectus, totam impedit, quo laboriosam nihil sint. Impedit, quod pariatur earum eveniet deleniti consectetur est quos in rem perspiciatis iste amet ut iure, aliquid exercitationem. Laudantium natus tenetur voluptatibus totam aut necessitatibus laborum obcaecati esse illo corrupti. Voluptatibus dignissimos rerum, harum tempore quos quaerat cupiditate sed natus vero quis exercitationem minus ad, doloremque id.0 </p>
+    </div>
+  </div>
+   
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="https://www.buses.tatamotors.com/blog/wp-content/uploads/2018/11/why-tata-motors-school-buses-are-best-in-the-indian-market.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">School Bus<i class="material-icons right">‧‧‧</i></span>
+      <!-- <p><a href="#">This is a link</a></p> -->
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">School Bus </span><i class="material-icons right">close</i></span>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat cum laboriosam unde ad magnam ut corrupti aspernatur commodi voluptatibus reiciendis ex officiis fugit voluptas assumenda quia porro praesentium nihil nisi est iste iure eligendi provident, quas tempora. Dolor voluptate cupiditate, quas id molestias inventore, praesentium minus error, aperiam a dicta recusandae harum architecto ullam exercitationem amet odio quia illo sint. Quas cupiditate neque, delectus veritatis vero nobis velit nostrum molestias perferendis? Ipsum, velit fugiat blanditiis aliquid optio aperiam! Hic natus fugiat quidem animi expedita quaerat, repellendus blanditiis laboriosam quam omnis commodi, illum tempora impedit sunt ex voluptatem similique id dolorem amet praesentium atque perferendis perspiciatis? Nisi voluptate dicta delectus asperiores, rerum pariatur neque enim sequi ex corporis tempora porro et, aperiam assumenda deserunt, inventore voluptas? Voluptates nihil sit at veritatis dolorem quis totam accusamus ipsum amet praesentium sunt, harum voluptatem et? Voluptas in reprehenderit, consectetur distinctio commodi dolorum consequatur harum placeat sit maiores amet sunt quisquam fugit provident dicta? Praesentium, vel nisi. Quisquam itaque reprehenderit quibusdam porro facilis dicta sunt vero, asperiores perspiciatis aut dolorum expedita qui eligendi adipisci totam hic, et, cum non tempore soluta! Alias, sint, itaque mollitia saepe libero quaerat necessitatibus beatae iure a pariatur veniam consequuntur vero corrupti, nemo minus magnam sed? Dolor magnam totam cumque sit consequatur quam facilis pariatur ullam culpa, fugiat necessitatibus ratione reprehenderit mollitia neque obcaecati aliquid dignissimos nobis maiores vero quis impedit. Adipisci quaerat tempore at officiis, atque sequi nobis voluptatum in unde eius nulla rem facilis fuga, facere dolorem tenetur labore voluptatibus aliquid consequuntur, sapiente aperiam corrupti deleniti repellat velit? Optio provident velit corrupti eveniet assumenda ipsum incidunt delectus, totam impedit, quo laboriosam nihil sint. Impedit, quod pariatur earum eveniet deleniti consectetur est quos in rem perspiciatis iste amet ut iure, aliquid exercitationem. Laudantium natus tenetur voluptatibus totam aut necessitatibus laborum obcaecati esse illo corrupti. Voluptatibus dignissimos rerum, harum tempore quos quaerat cupiditate sed natus vero quis exercitationem minus ad, doloremque id.0 </p>
+    </div>
+  </div>
+
+
+
+
+
+
+  <br>
+<footer class="page-footer font-small stylish-color-dark pt-4">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mx-auto">
+
+        <!-- Content -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4 ">Pioneer Academy</h5>
+        <p id="yes">Excellence matters and Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla hic voluptates excepturi neque commodi! Dolor iste, nulla quo dolorem hic iusto. Tempora quasi facilis, magnam optio fugit accusantium voluptatibus neque?.</p>
+
       </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Facilities</h5>
+
+        <ul class="list-unstyled white">
+          <li>
+            <a href="#!">Library</a>
+          </li>
+          <li>
+            <a href="#!">Canteen</a>
+          </li>
+          <li>
+            <a href="#!">Language Lab</a>
+          </li>
+          <li>
+            <a href="#!">Computer Lab</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">College</h5>
+
+        <ul class="list-unstyled white">
+          <li>
+            <a href="#!">History</a>
+          </li>
+          <li>
+            <a href="#!">Vision and Mission</a>
+          </li>
+          <li>
+            <a href="#!">Administration</a>
+          </li>
+          <li>
+            <a href="#!">Recognition</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Academics</h5>
+
+        <ul class="list-unstyled white">
+          <li>
+            <a href="#!">Courses</a>
+          </li>
+          <li>
+            <a href="#!">Students</a>
+          </li>
+          <li>
+            <a href="#!">Admissions</a>
+          </li>
+          <li>
+            <a href="#!">Question Bank</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+ 
+  <ul class="list-unstyled list-inline text-center">
+    <li class="list-inline-item">
+      <a class="btn-floating btn-fb mx-1">
+        <i class="fab fa-facebook-f"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-tw mx-1">
+        <i class="fab fa-twitter"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-gplus mx-1">
+        <i class="fab fa-google-plus-g"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-li mx-1">
+        <i class="fab fa-linkedin-in"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-dribbble mx-1">
+        <i class="fab fa-dribbble"> </i>
+      </a>
+    </li>
+  </ul>
+  <div class="footer-copyright text-center py-3 ccc">© 2020 Copyright: Shyam & Vivek 
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+
+
+
 </body>
 </html>
