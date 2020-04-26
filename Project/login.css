@@ -6,8 +6,9 @@ body{
     background-size: cover;
 }
 .form{
+    margin-top: 10px;
     background: #000;
-    z-index: 0;
+    z-index: 1;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     position: absolute;
     top: 50%;
@@ -16,8 +17,14 @@ body{
     width: 500px;
     padding: 40px 45px 30px 45px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 12px;
     opacity: .9;
+    /* width: 100%;  */
+    /* height: 7vh; */
+     /* margin-top: 100px; */
+}
+.jumbotron{
+    margin-bottom: 20vh;
 }
 .form{
     color: white;
@@ -25,14 +32,15 @@ body{
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 14vh;
+    margin-top: 15vh;
+    padding-bottom: 0px;
 
 }
 .form .icons i{
     color: #fff;
     font-size: 25px;
     margin: 0 30px 30px 30px;
-    /* transition: .8s; */
+    transition: .8s;
     transition-property: color,transform;
 
 }
@@ -88,12 +96,12 @@ color: #10AC84;
     border-radius: 50%;
     font-size: 25px;
     margin: 0 30px 30px 30px;
-    /* transition: .8s; */
+    transition: .8s;
     transition-property: color,transform;
 
 }
 footer{
-    margin-top: 70vh;
+    margin-top: 51vh;
     background-color: #007bff;
     color: black;
 }
