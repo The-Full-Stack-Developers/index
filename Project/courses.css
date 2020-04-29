@@ -1,0 +1,18 @@
+h2{
+	text-align: center;
+	border: 2px solid blue;
+
+}
+ul{
+	border: 2px solid blue;
+	font-size: 20px;
+}
+
+.btn {
+  border: none; /* Remove borders */
+  color: white; /* Add a text color */
+  padding: 14px 28px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+.warning {background-color: #ff9800;} /* Orange */
+.warning:hover {background: #e68a00;}
