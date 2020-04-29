@@ -70,15 +70,58 @@ body{
 .navbar-dark .navbar-nav .nav-link:hover {
     color: blue;
     /* border-bottom: 5px solid white; */
-    background-color: aquamarine;
+    background-color: #40bad5;
     color: black;
-    transition: ease-in-out;
-    transition-delay: 100ms;
+    /* transition: ease-in-out; */
+    /* transition-delay: 100ms; */
     border-radius: 10px;
     /* transform-style: flat; */
+    transition: all .5s;
+    /* transition: all .5s; */
 }
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 3.5rem;
     padding-left: 3.5rem;
     font-weight: bold;
+    transition: all .8s ease-in-out;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all 1s ease-in-out;
+}
+nav ul li a:hover {
+    transition: all .5s;
+}
+.list-group-item.active {
+
+    z-index: 2;
+    color: #fff;
+    background-color: #ff926b;
+    border-color: #ff926b;
+}
+.list-group-item {
+
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    background-color: #dae1e7;
+}
+a:hover {
+    color: #d9dfe6;
+    text-decoration: none;
+}
+footer {
+    /* margin-top: 70vh; */
+    background-color: #ff926b;
+    color: black;
+    border-radius: 40px;
+}
+.jumbotron{
+          
+    background-size: 100% 100%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: url("adobeps1.png");
+    background-size: cover;
+    
 }
