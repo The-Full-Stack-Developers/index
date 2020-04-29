@@ -60,3 +60,7 @@ footer a:hover{
 #yes{
     color: white;
 }
+.jumbotron{
+    /* padding-top: 20px; */
+    background-position: center;
+}
