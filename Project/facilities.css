@@ -10,10 +10,18 @@
 }
 footer ul:not(.browser-default) > li {
     list-style-type: none;
-    background-color: #007bff;
+    background-color: #ff926b;
 }
 .page-footer {
     padding-top: 20px;
     color: #fff;
-    background-color: #007bff;
+    background-color:#ff926b ;
+}
+nav {
+    color: #fff;
+     background-color: #59353A;
+    
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
 }
