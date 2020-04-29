@@ -80,8 +80,8 @@ body{
     /* transition: all .5s; */
 }
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 3.5rem;
-    padding-left: 3.5rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
     font-weight: bold;
     transition: all .8s ease-in-out;
 }
