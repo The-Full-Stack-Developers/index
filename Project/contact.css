@@ -31,3 +31,11 @@ img{
 *, ::after, ::before {
     box-sizing: unset;
 }
+.hola{
+    background-color: blanchedalmond;
+    color: brown;
+    height: fit-content;
+}
+p{
+    color: burlywood;
+}
