@@ -63,6 +63,7 @@ footer a:hover{
 .jumbotron{
     /* padding-top: 20px; */
     background-position: center;
+    color: rgb(6, 75, 99);
 }
 body{
     background-color: #59353A;

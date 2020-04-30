@@ -32,7 +32,7 @@ body{
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 15vh;
+    margin-top: 25vh;
     padding-bottom: 0px;
 
 }
@@ -101,7 +101,7 @@ color: #10AC84;
 
 }
 footer{
-    margin-top: 51vh;
+    margin-top: 55vh;
     background-color: #007bff;
     color: black;
 }
