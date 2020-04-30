@@ -8,11 +8,26 @@ body{
     color: cyan;
 }
 footer{
-	font-family: Cardo;
+    font-family: Cardo;
+    /* margin-top: 1000px; */
 }
 img{
 	align-content: right;
 	width: 750px;
 	height: 400px;
 }
+#nn{
+    background-image: none;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    margin-left: 300px;
+    margin-right:300px ;
+    border-radius: 10px;
+    color: black;
+}
 
+
+*, ::after, ::before {
+    box-sizing: unset;
+}
