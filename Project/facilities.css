@@ -15,12 +15,11 @@ footer ul:not(.browser-default) > li {
 .page-footer {
     padding-top: 20px;
     color: #fff;
-    background-color:#ff926b ;
+    background-color:#01c5ce;
 }
 nav {
-    color: #fff;
-     background-color: #59353A;
-    
+    color: #cde7f6;
+    background-color: #cde7f6;
     width: 100%;
     height: 56px;
     line-height: 56px;
