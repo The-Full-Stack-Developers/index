@@ -1,6 +1,6 @@
 
 body{
-	font-family: Lato;
+	
 }
 li a{
 	font-size: 20px;
@@ -20,3 +20,22 @@ footer{
 
 .success {background-color: #4CAF50;} /* Green */
 .success:hover {background-color: #46a049;}
+
+.b{
+	text-align: center;
+	text-decoration-color: red;
+	font-size: 20px;
+}
+.vision{
+	font-size: 25px;
+	font-family: 'PT Serif', serif;
+}
+.contact{
+	border: 3px solid blue;
+	font-size: 20px;
+	text-align: center;
+}
+.features{
+	font-size: 18px;
+	font-family: 'Raleway', sans-serif;
+}
