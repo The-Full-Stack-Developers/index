@@ -3,12 +3,12 @@ body{
 	background-color: #fcf4a3;
 	
 }
-img{
+#he{
 	margin-top: 10vh;
 	width: 100%;
 	height: 400px;
-	padding-top: 35px;
-	padding-bottom: 35px;
+	/* padding-top: 35px; */
+	/* padding-bottom: 35px; */
 	/* border-radius: 4s5px; */
 
 }
@@ -22,6 +22,8 @@ li a{
 
 footer{
 	border-radius: 40px;
+	text-align: center;
+	/* color: white; */
 }
 
 .btn {
@@ -42,6 +44,7 @@ footer{
 .vision{
 	font-size: 25px;
 	font-family: 'PT Serif', serif;
+	/* margin-top: -20pc; */
 }
 .contact{
 	/* border: 4px solid green; */
@@ -57,7 +60,8 @@ footer{
     z-index: 2;
     color: #fff;
     background-color: black;
-    border-color: black;
+	border-color: black;
+	text-align: center;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: .5rem;
