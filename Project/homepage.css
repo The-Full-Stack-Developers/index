@@ -68,3 +68,31 @@ footer{
 /* .jumbotron{
 	margin-top: 20px;
 } */
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2.1rem;
+    padding-left: 1rem;
+    font-weight: bold;
+    font-size: 20px;
+	color: white;
+	border-radius: 20px;
+}
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+	/* color: rgba(0,0,0,.9);
+	c */
+	color: black;
+	background-color: blanchedalmond;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+	/* color: rgba(0,0,0,.9); */
+	color: blueviolet;
+}
+.navbar-light .navbar-brand {
+
+	/* color: rgba(0,0,0,.9); */
+	color: white;
+	font-weight: bold;
+	font-style: italic;
+	font-family: cursive;
+
+}
