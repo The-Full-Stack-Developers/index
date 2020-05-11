@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    height: 100vh;
+    /* height: 100vh; */
     /* background: white; */
     background-size: cover;
     font-family: Cardo;
@@ -11,11 +11,11 @@ footer{
     font-family: Cardo;
     /* margin-top: 1000px; */
 }
-img{
+/* img{
 	align-content: right;
 	width: 750px;
 	height: 400px;
-}
+} */
 #nn{
     background-image: none;
     align-items: center;

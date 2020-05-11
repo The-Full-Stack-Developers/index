@@ -14,7 +14,7 @@ body{
 }
 footer ul:not(.browser-default) > li {
     list-style-type: none;
-    background-color: #ff926b;
+    background-color: #ffc107 !important
 }
 .page-footer {
     padding-top: 20px;
