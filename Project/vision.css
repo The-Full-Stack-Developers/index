@@ -17,3 +17,7 @@ h1{
   font-size: 30px;
   text-align: center;
 }
+a:hover {
+  color: palegoldenrod;
+  text-decoration: none;
+}

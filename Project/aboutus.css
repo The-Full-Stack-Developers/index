@@ -55,6 +55,10 @@ html {
   cursor: pointer;
   width: 100%;
 }
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
 
 .button:hover {
   background-color: #555;
@@ -68,6 +72,10 @@ html {
 }
 .row {
   display: flex;
+}
+a:hover{
+  text-decoration: none;
+  color: white;
 }
 
 .column {

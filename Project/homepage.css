@@ -100,3 +100,13 @@ footer{
 	font-family: cursive;
 
 }
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+li a {
+    text-decoration-color: red;
+    font-size: 22px;
+    text-indent: 27px;
+    color: black;
+}
