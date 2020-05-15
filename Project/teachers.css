@@ -27,5 +27,13 @@ button {
 
 img{
   width: 400px;
-  height: 450px;
+  height: 300px;
+}
+a:hover {
+  color: palegoldenrod;
+  text-decoration: none;
+}
+h2{
+  padding: 20px;
+  text-align: center;
 }
